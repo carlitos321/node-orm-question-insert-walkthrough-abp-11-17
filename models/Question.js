@@ -20,7 +20,7 @@ class Question{
 
   insert() {
     return new Promise(function(resolve){
-      console.log("this is a promise statement")
+      resolve("this is a promise statement")
     })
 
   }
