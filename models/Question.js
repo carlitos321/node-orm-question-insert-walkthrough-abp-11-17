@@ -20,7 +20,11 @@ class Question{
 
   insert() {
     return new Promise(function(resolve){
-      resolve("this is a promise statement")
+
+      db.run(sql, function(){
+        resolve("inserted some content")
+      })
+
     })
 
   }
